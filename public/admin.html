@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Page Title</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- PDF upload section -->
+      <div id="pdf-upload-container">
+        <h2>Upload your PDF</h2>
+        <form
+          id="pdf-upload-form"
+          action="/upload_pdf"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <input type="file" id="pdfUpload" name="pdfUpload" accept=".pdf" />
+          <input type="submit" value="Upload" />
+        </form>
+      </div>
+
+      <!-- User settings section -->
+      <div id="user-settings-container">
+        <h2>Change your username or password</h2>
+        <form
+          id="user-settings-form"
+          action="/change_user_settings"
+          method="POST"
+        >
+          <label for="username">Username:</label><br />
+          <input type="text" id="username" name="username" required /><br />
+          <label for="password">Password:</label><br />
+          <input type="password" id="password" name="password" required /><br />
+          <input type="submit" value="Update" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

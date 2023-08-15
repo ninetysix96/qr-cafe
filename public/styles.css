@@ -1,0 +1,113 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	font-family: Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #C4DFDF;
+}
+main {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+#login-container {
+	width: 300px;
+	margin: 0 auto;
+	padding: 0px 20px 20px 20px;
+	border-radius: 8px;
+	background-color: white;
+}
+
+#login-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 0px
+}
+
+#login-form label {
+	margin-bottom: 0px;
+}
+
+#login-form input[type="text"], 
+#login-form input[type="password"] {
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+#login-form input[type="submit"] {
+	cursor: pointer;
+	height: 40px;
+	background-color: #967E76;
+	border-radius: 10px;
+	color: white;
+	font-weight: 600;
+	transition: 0.2s;
+}
+
+#login-form input[type="submit"]:hover {
+	cursor: pointer;
+	height: 40px;
+	background-color: #ae958c;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 50px;
+	gap: 50px
+}
+
+#pdf-upload-container, #user-settings-container {
+	width: 70%;
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 8px;
+	background-color: white;
+}
+
+#pdf-upload-form, #user-settings-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+#pdf-upload-form label, #user-settings-form label {
+	margin-bottom: 5px;
+}
+
+#pdfUpload {
+	margin-bottom: 20px;
+}
+
+#pdf-upload-form input[type="text"], 
+#pdf-upload-form input[type="password"], 
+#user-settings-form input[type="text"], 
+#user-settings-form input[type="password"] {
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+#pdf-upload-form input[type="submit"], 
+#user-settings-form input[type="submit"] {
+	cursor: pointer;
+	height: 40px;
+	background-color: #967E76;
+	border-radius: 10px;
+	color: white;
+	font-weight: 600;
+	transition: 0.2s;
+}
+
+#pdf-upload-form input[type="submit"]:hover, 
+#user-settings-form input[type="submit"]:hover {
+	background-color: #ae958c;
+}
